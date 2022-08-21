@@ -1,1 +1,31 @@
-<h2>Hello world! 這是 index </h2>
+<h1>Elliot 記帳系統</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">出資人</th>
+      <th scope="col-3">項目</th>
+      <th scope="col">金額</th>
+      <th scope="col">付款人</th>
+      <th scope="col-4">結算</th>
+      <th scope="col">操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each items}}
+    <tr>
+      <td>{{ this.Investors }}</td>
+      <td>{{ this.item }}</td>
+      <td>{{ this.amount }}</td>
+      <td>{{ this.paymentUser }}</td>
+      <td>{{ this.settleAccount }}</td>
+      <td>
+        <a class="btn btn-success" href="/">edit</a>
+        <form action="/" method="POST" style="display: inline;">
+          <button class="btn btn-danger" type="submit">delete</button>
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
