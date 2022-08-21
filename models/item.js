@@ -9,4 +9,4 @@ const itemSchema = new Schema({
   settleAccount: { type: String, required: true} // 結算
 })
 
-module.exports = mongoose.model('Accounting', itemSchema)
+module.exports = mongoose.model('Item', itemSchema)
