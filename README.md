@@ -9,6 +9,7 @@
   * node v16.15.1
   * Express v4.17.1
   * mongoose v6.0.4
+  * express-handlebars v4.0.2
 
 
 ## 執行專案
@@ -18,6 +19,7 @@
 ```shell
   npm i express@4.17.1
   npm i mongoose@6.0.4 # Mac M1 chip
+  npm install express-handlebars@4.0.2
 ```
 
 3. 資料庫連線設定，本專案使用 Robo 3T GUI:
